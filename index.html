@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:759px)" href=""/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:760px) and (max-width:979px)" href=""/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:980px) and (max-width:1199px)" href=""/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width:1200px)" href=""/>
+    <link rel="stylesheet" type="text/css" href=""/>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="inp"/>
+<button id="butt">确定</button>
+
+</body>
+<script>
+    inp.oninput=function(event){
+        console.log(event);
+        if(event.target.value.length>=5){
+            butt.disabled=true
+        }else{
+            butt.disabled=false
+        }
+    }
+
+</script>
+</html>
